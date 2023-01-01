@@ -143,11 +143,19 @@ header {
     padding: 1em;
 }
 
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .logo {
     max-width: 100px;
+    float: left;
 }
 
 .nav {
+    float: right;
     position: fixed;
     background: var(--clr-dark);
     color: var(--clr-light);
@@ -240,6 +248,10 @@ header {
 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
+
+@media (max-width: 400px) {
+    .nav-
+}
 
 
 /* Intro Section */
