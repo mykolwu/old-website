@@ -282,6 +282,12 @@ img {
 }
 
 /*==================== HOME ====================*/
+.construction {
+  width: 525px;
+  height: auto;
+  align-self: center;
+}
+
 .home__container {
   gap: 1rem;
 }
