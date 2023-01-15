@@ -321,7 +321,7 @@ img {
 }
 
 .home__blob-img {
-  width: 200px;
+  width: 400px;
   position: fixed;
   justify-content: center;
 }
@@ -373,6 +373,15 @@ img {
 
 .home__scroll-arrow {
   font-size: 1.25rem;
+}
+
+.home-link {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.home-link:hover {
+  color: var(--first-color);
 }
 
 /*========== BUTTONS ==========*/
@@ -661,7 +670,7 @@ img {
 /*==================== SERVICES ====================*/
 .project-description {
   font-size: var(--smaller-font-size);
-  margin-right: 1.1rem;
+  text-align: left;
 }
 
 .project-image {
@@ -673,10 +682,15 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.teaching__container {
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .services__content {
   position: relative;
   background-color: var(--container-color);
-  padding: 4.5rem .5rem 1.25rem 1.5rem;
+  padding: 4.5rem 0rem 1.25rem 1.5rem;
   border-radius: .25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: .3s;
@@ -698,6 +712,7 @@ img {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-75);
   font-weight: var(--font-medium);
+  text-align: center;
 }
 
 .services__button {
@@ -745,6 +760,7 @@ img {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
+  text-align: center;
 }
 
 .services__modal-close {
@@ -769,15 +785,30 @@ img {
 
 /*==================== TEACHING ====================*/
 .teaching-class {
-
+  padding: 1rem;
 }
 
-.class-name {
+.class__link {
+  font-size: var(--med-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
 
+.class__link:hover {
+  color: var(--first-color);
 }
 
 .class-description {
-  
+  color: var(--title-color);
+}
+
+.notes-link {
+  color: var(--title-color);
+  text-decoration: underline;
+}
+
+.notes-link:hover {
+  color: var(--first-color);
 }
 
 /*==================== CONTACT ME ====================*/
@@ -934,6 +965,12 @@ img {
     grid-template-columns: max-content;
     justify-content: center;
   }
+
+  .teaching__container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+  
   .services__content {
     padding-right: 3.5rem;
   }
@@ -1042,8 +1079,8 @@ img {
     column-gap: 5rem;
   }
   .about__img {
-    width: 350px;
-    height: 520px;
+    width: 287px;
+    height: 434px;
   }
   .about__description {
     text-align: initial;
@@ -1071,8 +1108,8 @@ img {
     font-size: 2rem;
   }
   .services__content {
-    padding: 6rem 0 2rem 2.5rem;
-  }
+    padding: 1.5rem;
+  } 
   .services__modal-content {
     width: 450px;
   }
